@@ -39,14 +39,14 @@ String isTrue=hospitalService.addHospital(hospital);
         if(isTrue){
             return ResponseEntity.status(200).body(new ApiResponse("Success"));
         }
-        return ResponseEntity.status(400).body(new ApiResponse("Valid: The user is Not Exist"));
+        return ResponseEntity.status(400).body(new ApiResponse("Valid: The Hospital is Not Exist"));
     }
     @DeleteMapping("/delete/{id}")
-    public ResponseEntity deleteDoctor(@PathVariable Integer id){
+    public ResponseEntity deleteHospital(@PathVariable Integer id){
         boolean isTrue=hospitalService.deleteHospital(id);
         if(isTrue){
             return ResponseEntity.status(200).body(new ApiResponse("Success"));
         }
-        return ResponseEntity.status(400).body(new ApiResponse("Valid: The user is Not Exist"));
+        return ResponseEntity.status(400).body(new ApiResponse("Valid: The Hospital is Not Exist"));
     }
 }
