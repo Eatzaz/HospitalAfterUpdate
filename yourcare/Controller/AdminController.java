@@ -33,7 +33,7 @@ adminService.addAdmin(admin);
         if(errors.hasErrors()){
             return ResponseEntity.status(400).body(errors.getFieldError().getDefaultMessage());
         }
-        boolean isTrue=adminService.updateDoctor(id,admin);
+        boolean isTrue=adminService.updateAdmin(id,admin);
         if(isTrue){
             return ResponseEntity.status(200).body(new ApiResponse("Success"));
         }
@@ -41,7 +41,7 @@ adminService.addAdmin(admin);
     }
     @DeleteMapping("/delete/{id}")
     public ResponseEntity deleteAdmin(@PathVariable Integer id){
-        boolean isTrue=adminService.deleteDoctor(id);
+        boolean isTrue=adminService.deleteAdmin(id);
         if(isTrue){
             return ResponseEntity.status(200).body(new ApiResponse("Success"));
         }
