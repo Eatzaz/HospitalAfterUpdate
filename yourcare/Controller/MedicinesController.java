@@ -36,7 +36,7 @@ public class MedicinesController {
         if(isTrue){
             return ResponseEntity.status(200).body(new ApiResponse("Success"));
         }
-        return ResponseEntity.status(400).body(new ApiResponse("Valid: The user is Not Exist"));
+        return ResponseEntity.status(400).body(new ApiResponse("Valid: The Medicines is Not Exist"));
     }
     @DeleteMapping("/delete/{id}")
     public ResponseEntity deleteMedicines(@PathVariable Integer id){
@@ -44,7 +44,7 @@ public class MedicinesController {
         if(isTrue){
             return ResponseEntity.status(200).body(new ApiResponse("Success"));
         }
-        return ResponseEntity.status(400).body(new ApiResponse("Valid: The user is Not Exist"));
+        return ResponseEntity.status(400).body(new ApiResponse("Valid: The Medicines is Not Exist"));
     }
 
 }
