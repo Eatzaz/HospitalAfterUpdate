@@ -35,7 +35,7 @@ public class StackController {
         if(isTrue){
             return ResponseEntity.status(200).body(new ApiResponse("Success"));
         }
-        return ResponseEntity.status(400).body(new ApiResponse("Valid: The ServiceStock is Not Exist"));
+        return ResponseEntity.status(400).body(new ApiResponse("Valid: The Service place is Not Exist"));
     }
     @DeleteMapping("/delete/{id}")
     public ResponseEntity deleteDoctor(@PathVariable Integer id){
@@ -43,6 +43,6 @@ public class StackController {
         if(isTrue){
             return ResponseEntity.status(200).body(new ApiResponse("Success"));
         }
-        return ResponseEntity.status(400).body(new ApiResponse("Valid: The user is Not Exist"));
+        return ResponseEntity.status(400).body(new ApiResponse("Valid: The Service place is Not Exist"));
     }
 }
