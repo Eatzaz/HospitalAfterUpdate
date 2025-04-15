@@ -37,7 +37,7 @@ public class MeetingController {
         if(isTrue){
             return ResponseEntity.status(200).body(new ApiResponse("Success"));
         }
-        return ResponseEntity.status(400).body(new ApiResponse("Valid: The user is Not Exist"));
+        return ResponseEntity.status(400).body(new ApiResponse("Valid: The meeting is Not Exist"));
     }
     @DeleteMapping("/delete/{id}")
     public ResponseEntity deleteMeeting(@PathVariable Integer id){
@@ -45,6 +45,6 @@ public class MeetingController {
         if(isTrue){
             return ResponseEntity.status(200).body(new ApiResponse("Success"));
         }
-        return ResponseEntity.status(400).body(new ApiResponse("Valid: The user is Not Exist"));
+        return ResponseEntity.status(400).body(new ApiResponse("Valid: The meeting is Not Exist"));
     }
 }
