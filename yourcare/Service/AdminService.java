@@ -18,7 +18,7 @@ public class AdminService {
     public void addAdmin(Admin admin){
 adminRepository.save(admin);
     }
-    public boolean updateDoctor(Integer id,Admin admin){
+    public boolean updateAdmin(Integer id,Admin admin){
         Admin admin1=adminRepository.findAllById(id);
         if(admin1==null){
             return false;
@@ -26,7 +26,7 @@ adminRepository.save(admin);
        admin1.setName(admin.getName());
         return true;
     }
-    public boolean deleteDoctor(Integer id){
+    public boolean deleteAdmin(Integer id){
         Admin admin=adminRepository.findAllById(id);
         if(admin==null){
             return false;
