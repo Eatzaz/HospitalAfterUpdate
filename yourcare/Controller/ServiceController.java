@@ -41,7 +41,7 @@ public class ServiceController {
         if (isTrue) {
             return ResponseEntity.status(200).body(new ApiResponse("Success"));
         }
-        return ResponseEntity.status(400).body(new ApiResponse("Valid: The user is Not Exist"));
+        return ResponseEntity.status(400).body(new ApiResponse("Valid: The Services is Not Exist"));
     }
 
     @DeleteMapping("/delete/{id}")
@@ -50,7 +50,7 @@ public class ServiceController {
         if (isTrue) {
             return ResponseEntity.status(200).body(new ApiResponse("Success"));
         }
-        return ResponseEntity.status(400).body(new ApiResponse("Valid: The user is Not Exist"));
+        return ResponseEntity.status(400).body(new ApiResponse("Valid: The Services is Not Exist"));
     }
 
     //2
